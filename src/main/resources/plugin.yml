@@ -1,0 +1,29 @@
+name: BuildSomething
+version: "1.0"
+main: io.github.sheepkill15.BuildSomething
+api-version: "1.16"
+description: One person builds around a given word and the others have to guess it!
+commands:
+  buildsomething:
+    aliases: [bs, builds]
+    description: Start building and guessing!
+    permission: com.sanddunes.buildsomething
+    usage: "Usage: /<command>"
+permissions:
+  com.sanddunes.buildsomething:
+    description: Allows buildsomething command
+    default: true
+    children:
+      com.sanddunes.buildsomething.join:
+        description: Join a game of BuildSomething!
+        default: true
+      com.sanddunes.buildsomething.leave:
+        description: Leave the game
+        default: true
+      com.sanddunes.buildsomething.bset:
+        description: Set the starting are of the builder
+        default: op
+      com.sanddunes.buildsomething.sset:
+        description: Set the starting are of the spectators
+        default: op
+

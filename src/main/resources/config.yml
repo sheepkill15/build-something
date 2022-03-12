@@ -1,0 +1,17 @@
+# This is the config file for the "Build Something" plugin
+
+# Sets the file path of the file which contains the words to be given to players
+# NOTE: Each word or word sequence should be on a separate line
+words: ""
+
+# Sets the required players joined to start the game
+required_players: 2
+
+# Sets the delay for starting the game upon enough players joining (in seconds)
+start: 30
+
+# Sets the time between rounds (in ticks)
+inbetween: 100
+
+# Sets the duration of a round (in seconds)
+round_duration: 150
